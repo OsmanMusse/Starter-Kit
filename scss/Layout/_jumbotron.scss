@@ -1,0 +1,30 @@
+#jumbotron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/jumbotron-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $outer-space;
+  height: 815px;
+
+
+  @media(max-width: 830px){
+    background-image: url(../img/jumbotron-img-small.png);
+  }
+
+  .jumbo-contain{
+    text-align: center;
+
+    p{
+      color: $white;
+      max-width: 400px;
+      width: 100%;
+      margin: 15px auto 0 auto;
+    }
+
+    button{
+      margin-top: em(30px);
+    }
+  }
+}
